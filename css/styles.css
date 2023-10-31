@@ -660,11 +660,6 @@ input {
   position: relative;
 }
 
-/* .modal-input:hover,
-.modal-input:focus {
-  border-color: #4d5ae5;
-} */
-
 .modal-input:focus-within {
   border-color: #4d5ae5;
 }
