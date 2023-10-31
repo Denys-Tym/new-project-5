@@ -499,6 +499,8 @@ input {
   margin-right: 120px;
 }
 
+/* Footer Subscribe */
+
 .footer-subscribe-container {
   margin-left: 80px;
 }
@@ -556,7 +558,14 @@ input {
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  gap: 24px;
 }
+
+.icon-subscribe {
+  display: inline-flex;
+}
+
+/* Backdrop */
 
 .backdrop {
   position: fixed;
@@ -576,11 +585,6 @@ input {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
-
-.icon-subscribe {
-  display: inline-flex;
-  padding-right: px;
 }
 
 .close-modal-btn {
