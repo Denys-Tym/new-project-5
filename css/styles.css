@@ -583,7 +583,7 @@ input {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
+.backdrop.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -659,7 +659,6 @@ input {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
-  outline: transparent;
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -668,12 +667,9 @@ input {
   position: relative;
 }
 
-.modal-input:hover {
+.modal-input:focus {
   border-color: #4d5ae5;
-}
-
-.modal-input:focus-within {
-  border-color: #4d5ae5;
+  outline: transparent;
 }
 
 .input-icon {
@@ -684,7 +680,6 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover + .input-icon,
 .modal-input:focus + .input-icon {
   fill: #4d5ae5;
 }
@@ -697,7 +692,7 @@ input {
   line-height: 1.17;
   letter-spacing: 0.04em;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline: transparent;
+
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   color: rgba(46, 47, 66, 0.4);
@@ -705,8 +700,9 @@ input {
   background-color: transparent;
 }
 
-.modal-textarea:focus-within {
+.modal-textarea:focus {
   border-color: #4d5ae5;
+  outline: transparent;
 }
 
 .modal-lable {
@@ -776,8 +772,7 @@ input {
   fill: transparent;
 }
 
-.checkbox-input:checked + .text-label-privacy span {
+.checkbox-input:checked + .text-label-privacy .checkbox-privacy {
   background-color: #404bbf;
-  border: none;
   fill: #f4f4fd;
 }
